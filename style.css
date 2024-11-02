@@ -216,6 +216,13 @@
     padding-right: 16px;
     padding-left: 22px;
 }
+
+.icon {
+    color: #d0b200;
+    height: 35px;
+    width: 35px;
+}
+
 .button{
     color: white;
     background-image: linear-gradient(#d0b200, #a58d00 );
@@ -226,9 +233,3 @@
     margin-right: 10px;
 }
 
-
-.icon {
-    color: #d0b200;
-    height: 35px;
-    width: 35px;
-}
