@@ -333,7 +333,7 @@
         </div>
     </div>
 </div>
-
+<div id="noResults" style="display: none;">No results found</div>
 <script>
     function scrollToSection(sectionId){
         const section = document.getElementById(sectionId);
@@ -346,6 +346,7 @@ const container = document.getElementById('content');
 
 // Get all tiles
 const tiles = Array.from(container.getElementsByClassName('col-12'));
+let foundMatch = false;
 
 button.addEventListener('click', () => {
     const query = searchInput.value.toLowerCase();
@@ -363,6 +364,7 @@ button.addEventListener('click', () => {
             i.style.display = 'block'; // Show matching tile
         }
     });
+    noResults.style.display = foundMatch ? 'none' : 'block';
 });
 </script>
 </body>
