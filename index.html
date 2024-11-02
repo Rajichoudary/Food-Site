@@ -343,6 +343,8 @@
     const button = document.getElementById('button');
 const searchInput = document.getElementById('searchInput');
 const container = document.getElementById('content');
+    const noResults = document.getElementById('noResults');
+
 
 
 // Get all tiles
@@ -363,9 +365,13 @@ button.addEventListener('click', () => {
         if (i.textContent.toLowerCase().includes(query)) {
             
             i.style.display = 'block'; // Show matching tile
+             foundMatch = true;
         }
     });
     noResults.style.display = foundMatch ? 'none' : 'block';
+    const url = new URL(window.location);
+    url.searchParams.set('search', query); // Set the 'search' parameter
+    window.history.pushState({}, '', url);
 });
 </script>
 </body>
