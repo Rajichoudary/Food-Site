@@ -13,12 +13,11 @@
             page:{
                 pageName: "Home Page",
                 siteSection:"Food",
-                URL:"https://rajichoudary.github.io/Food-Site/"
+                URL:""
 
             },
         };
     </script>
-    <script src="https://assets.adobedtm.com/091296e21369/5ed6b953d135/launch-eafcb0f18c1a-development.min.js" async></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
@@ -38,10 +37,10 @@
                     <a class="nav-link" href="#exploreMenuSection" id="navItem2">Explore Menu</a>
                     <a class="nav-link" href="#deliveryPaymentSection" id="navItem3">Delivery & Payment</a>
                     <a class="nav-link" href="#followUsSection" id="navItem4">Follow Us</a>
-                     <div class="input-box">
+                    <div class="input-box">
                         
-                        <input type="text" placeholder="Search here..." />
-                        <button class="button">Search</button>
+                        <input id="searchInput" type="text" placeholder="Search here..." />
+                        <button id="button" class="button">Search</button>
                       </div>
                 </div>
             </div>
@@ -101,14 +100,14 @@
   </div>
   <div class="explore-menu-section pt-5 pb-5" id="exploreMenuSection">
     <div class="container">
-        <div class="row">
-            <div class="col-12">
+        <div class="row" id="content">
+            <div class="col-12" >
                 <h1 class="menu-section-heading" id="explore menu">Explore Menu</h1>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-3" class="i">
                     <div class="menu-item-card shadow p-3 mb-3">
                         <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-ginger-fried-img.png" class="menu-item-image w-100" />
-                        <h1 class="menu-card-title">Non-Veg Starters</h1>
+                        <h1 class="tile">Non-Veg Starters</h1>
                         <a href="" class="menu-item-link">
                             View All
                             <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
@@ -117,10 +116,10 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-3" class="i">
                     <div class="shadow menu-item-card shadow p-3 mb-3">
                         <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-veg-starters-img.png" class="menu-item-image w-100" />
-                        <h1 class="menu-card-title">Veg Starters</h1>
+                        <h1 class="tile">Veg Starters</h1>
                         <a href="" class="menu-item-link">
                             View All
                             <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
@@ -129,10 +128,10 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-3" class="i">
                     <div class="menu-item-card shadow p-3 mb-3">
                         <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-soup-img.png" class="menu-item-image w-100" />
-                        <h1 class="menu-card-title">Soups</h1>
+                        <h1 class="tile">Soups</h1>
                         <a href="" class="menu-item-link">
                             View All
                             <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
@@ -141,10 +140,10 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-3" class="i">
                     <div class="menu-item-card shadow p-3 mb-3">
                         <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-grilled-seafood-img.png" class="menu-item-image w-100" />
-                        <h1 class="menu-card-title">Fish & Sea food</h1>
+                        <h1 class="tile">Fish & Sea food</h1>
                         <a href="" class="menu-item-link">
                             View All
                             <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
@@ -153,10 +152,10 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-3" class="i">
                     <div class="menu-item-card shadow p-3 mb-3">
                         <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-hyderabadi-biryani-img.png" class="menu-item-image w-100" />
-                        <h1 class="menu-card-title">Main Course</h1>
+                        <h1 class="tile">Main Course</h1>
                         <a href="" class="menu-item-link">
                             View All
                             <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
@@ -165,10 +164,10 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-3" class="i">
                     <div class="menu-item-card shadow p-3 mb-3">
                         <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-mushroom-noodles-img.png" class="menu-item-image w-100" />
-                        <h1 class="menu-card-title">Noodles</h1>
+                        <h1 class="tile">Noodles</h1>
                         <a href="" class="menu-item-link">
                             View All
                             <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
@@ -177,10 +176,10 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-3" class="i">
                     <div class="menu-item-card shadow p-3 mb-3">
                         <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-gluten-img.png" class="menu-item-image w-100" />
-                        <h1 class="menu-card-title">Salads</h1>
+                        <h1 class="tile">Salads</h1>
                         <a href="" class="menu-item-link">
                             View All
                             <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
@@ -189,10 +188,10 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-3" class="i">
                     <div class="menu-item-card shadow p-3 mb-3">
                         <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-coffee-bourbon-img.png" class="menu-item-image w-100" />
-                        <h1 class="menu-card-title">Desserts</h1>
+                        <h1 class="tile">Desserts</h1>
                         <a href="" class="menu-item-link">
                             View All
                             <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
@@ -334,11 +333,37 @@
         </div>
     </div>
 </div>
+
 <script>
     function scrollToSection(sectionId){
         const section = document.getElementById(sectionId);
         section.scrollIntoView({behavior:"smooth"});
     }
+    const button = document.getElementById('button');
+const searchInput = document.getElementById('searchInput');
+const container = document.getElementById('content');
+
+
+// Get all tiles
+const tiles = Array.from(container.getElementsByClassName('col-12'));
+
+button.addEventListener('click', () => {
+    const query = searchInput.value.toLowerCase();
+
+    // Clear previous results
+    tiles.forEach(i => {
+        i.style.display = 'none'; // Hide all tiles
+    });
+
+    // Show matching tiles
+    tiles.forEach(i => {
+       
+        if (i.textContent.toLowerCase().includes(query)) {
+            
+            i.style.display = 'block'; // Show matching tile
+        }
+    });
+});
 </script>
 </body>
 </html>
