@@ -9,15 +9,18 @@
     <link rel="stylesheet" href="style.css">
     <title>Food Website</title>
     <script>
+        var searchTerm = document.querySelector('.search-term').value;
         var digitalData = digitalData || [];
         digitalData ={
             page:{
                 pageName: "Home Page",
                 siteSection:"Food",
                 URL:""
-
+                  'event': 'searchEvent',
+                  'searchTerm': searchTerm
             },
         };
+      
     </script>
 </head>
 <body>
@@ -40,7 +43,7 @@
                     <a class="nav-link" href="#followUsSection" id="navItem4">Follow Us</a>
                     <div class="input-box">
                         
-                        <input id="searchInput" type="text" placeholder="Search here..." />
+                        <input id="searchInput" class='search-term' type="text" placeholder="Search here..." />
                         <button id="button" class="button">Search</button>
                       </div>
                 </div>
