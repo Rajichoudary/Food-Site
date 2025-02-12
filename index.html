@@ -11,15 +11,17 @@
     <script>
         var searchTerm = document.querySelector('.search-term').value;
         var digitalData = digitalData || [];
-        digitalData ={
-            page:{
-                pageName: "Home Page",
-                siteSection:"Food",
-                URL:""
-                  'event': 'searchEvent',
-                  'searchTerm': searchTerm
-            },
-        };
+       
+
+         digitalData = {
+        page: {
+            pageName: "Home Page",
+            siteSection: "Food",
+            URL: window.location.href, // Current page URL
+            searchTerm: searchTerm,     // Capturing the search term
+            event: 'searchEvent'       // Event to trigger the search
+        }
+    };
       
     </script>
 </head>
